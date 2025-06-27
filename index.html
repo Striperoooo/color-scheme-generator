@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>🎨 Color Scheme Generator</title>
+</head>
+
+
+
+<body>
+
+    <header>
+        <nav>
+            <form id="color-form">
+                <input class="color-picker" type="color" name="seed-color" id="seed-color">
+
+                <select name="color-mode" id="color-mode" size="1">
+                    <option value="monochrome" selected>Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dar</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Nalogic-complement</option>
+                    <option value="triad">Triad</option>
+                    <option value="quad">Quad</option>
+                </select>
+
+                <button class="get-color-btn" type="submit">Get color scheme</button>
+            </form>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="color-grid-container">
+
+            <div class="color-grid-item color-one" id="color-one">
+                <div class="color-hex-text" data-index="color-one">
+                    #F55A5A
+                </div>
+            </div>
+
+            <div class="color-grid-item color-two" id="color-two">
+                <div class="color-hex-text" data-index="color-two">
+                    #FCF6BD
+                </div>
+            </div>
+
+            <div class="color-grid-item color-three" id="color-three">
+                <div class="color-hex-text" data-index="color-three">
+                    #D0F4DE
+                </div>
+            </div>
+
+            <div class="color-grid-item color-four" id="color-four">
+                <div class="color-hex-text" data-index="color-four">
+                    #A9DEF9
+                </div>
+            </div>
+
+            <div class="color-grid-item color-five" id="color-five">
+                <div class="color-hex-text" data-index="color-five">
+                    #E4C1F9
+                </div>
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+
+
+
+</html>

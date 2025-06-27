@@ -1,0 +1,147 @@
+/* general selectors */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+/* shared selectors */
+select,
+.get-color-btn {
+    border-radius: 0.375rem;
+}
+
+select,
+.color-hex-text {
+    color: #D5D4D8;
+}
+
+select,
+.color-picker,
+.get-color-btn {
+    cursor: pointer;
+}
+
+/* header */
+header {
+    min-height: 90px;
+    max-height: 90px;
+    background-color: #1F2937;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 0 2em; */
+}
+
+form {
+    height: 42px;
+    /* border: 1px solid salmon; */
+    /* min-width: 600px;
+    max-width: 1000px; */
+    display: flex;
+    gap: 1em;
+}
+
+select {
+    background-color: #1F293A;
+    border: 2px solid #D5D4D8;
+    font-size: 1rem;
+    padding: 0.7em;
+}
+
+.color-picker {
+    height: 100%;
+    border: 3px solid #D5D4D8;
+}
+
+.get-color-btn {
+    background-color: #3D4B60;
+    color: white;
+    border: none;
+    padding: 1em 0.7em;
+}
+
+/* main */
+.color-grid-container {
+    display: grid;
+    height: calc(100vh - 90px);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+        "onee twoo thre four five"
+    ;
+}
+
+.color-grid-item {
+    /* min-width: 5vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.color-hex-text {
+    font-weight: 500;
+    font-size: 0.75rem;
+    background-color: #1F2937;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.color-one {
+    background-color: #FF99C8;
+    grid-area: onee;
+}
+
+.color-two {
+    background-color: #FCF6BD;
+    grid-area: twoo;
+}
+
+.color-three {
+    background-color: #D0F4DE;
+    grid-area: thre;
+}
+
+.color-four {
+    background-color: #A9DEF9;
+    grid-area: four;
+}
+
+.color-five {
+    background-color: #E4C1F9;
+    grid-area: five;
+}
+
+/* media queries */
+
+/* @media (max-width: 600px) {
+    .color-grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "onee"
+            "twoo"
+            "thre"
+            "four"
+            "five"
+        ;
+        padding: 0;
+    }
+
+    .color-grid-item {
+        min-width: 0;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .color-hex-text {
+        padding: 0 1em;
+        width: 15%;
+    }
+} */
+
+
+/* hello world */
