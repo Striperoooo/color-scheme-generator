@@ -116,6 +116,7 @@ select {
 }
 
 /* media queries */
+
 /* @media (max-width: 600px) {
     .color-grid-container {
         grid-template-columns: 1fr;
@@ -133,15 +134,14 @@ select {
         min-width: 0;
         flex-direction: row;
         justify-content: flex-start;
-        /* align-items: center; */
-width: 100%;
-}
+        width: 100%;
+    }
 
-.color-hex-text {
-    padding: 0 1em;
-    width: 15%;
-}
-}
+    .color-hex-text {
+        padding: 0 1em;
+        width: 15%;
+    }
+} */
 
-*/
+
 /* hello world */
