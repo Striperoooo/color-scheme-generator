@@ -45,12 +45,13 @@ function handleRenderHTML(colorScheme) {
     const colorColumns = document.querySelectorAll('.color-grid-item')
     const colorHexText = document.querySelectorAll('.color-hex-text')
 
-    colorColumns.forEach((column, i) => {
-        column.style.backgroundColor = colorScheme[i]
-    })
-
-    colorHexText.forEach((hexText, i) => {
-        hexText.textContent = colorScheme[i]
+    colorScheme.forEach((color, i) => {
+        if (colorColumns[i]) {
+            colorColumns[i].style.backgroundColor = color
+        }
+        if (colorHexText[i]) {
+            colorHexText[i].textContent = color
+        }
     })
 }
 
