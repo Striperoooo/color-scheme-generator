@@ -18,23 +18,26 @@
 
 <body>
 
-    <nav>
+    <header>
+        <nav>
+            <form>
+                <input class="color-picker" type="color" name="seed-color" id="seed-color">
 
-        <form>
-            <input type="color" name="seed-color" id="seed-color">
-            <select name="mode" id="mode" size="1">
-                <option value="monochrome" selected>Monochrome</option>
-                <option value="monochrome-dark">Monochrome-dar</option>
-                <option value="monochrome-light">Monochrome-light</option>
-                <option value="analogic">Analogic</option>
-                <option value="complement">Complement</option>
-                <option value="analogic-complement">Nalogic-complement</option>
-                <option value="triad">Triad</option>
-                <option value="quad">Quad</option>
-            </select>
-        </form>
+                <select name="mode" id="mode" size="1">
+                    <option value="monochrome" selected>Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dar</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Nalogic-complement</option>
+                    <option value="triad">Triad</option>
+                    <option value="quad">Quad</option>
+                </select>
 
-    </nav>
+                <button class="get-color-btn" type="submit">Get color scheme</button>
+            </form>
+        </nav>
+    </header>
 
 </body>
 
