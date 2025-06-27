@@ -10,7 +10,6 @@ body {
 }
 
 /* header */
-
 header {
     min-height: 90px;
     max-height: 90px;
@@ -34,7 +33,7 @@ select,
 
 form {
     height: 42px;
-    border: 1px solid salmon;
+    /* border: 1px solid salmon; */
     /* min-width: 600px;
     max-width: 1000px; */
     display: flex;
@@ -60,3 +59,21 @@ select {
     border: none;
     padding: 1em 0.7em;
 }
+
+/* main */
+/* .color-grid-container {
+    display: flex;
+}
+
+.color-grid-item {
+    min-width: 5vw;
+    min-height: 100vh;
+}
+
+.color-one {
+    background-color: aquamarine;
+}
+
+.color-two {
+    background-color: bisque;
+} */
