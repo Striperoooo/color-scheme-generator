@@ -16,7 +16,7 @@ select,
 }
 
 select,
-.color-hex {
+.color-hex-text {
     color: #D5D4D8;
 }
 
@@ -33,7 +33,8 @@ header {
     background-color: #1F2937;
     display: flex;
     align-items: center;
-    padding: 0 2em;
+    justify-content: center;
+    /* padding: 0 2em; */
 }
 
 form {
@@ -70,18 +71,18 @@ select {
     height: calc(100vh - 90px);
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas:
-        "onee twoo three four five"
+        "onee twoo thre four five"
     ;
 }
 
 .color-grid-item {
-    min-width: 5vw;
+    /* min-width: 5vw; */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
 
-.color-hex {
+.color-hex-text {
     font-weight: 500;
     font-size: 0.75rem;
     background-color: #1F2937;
@@ -101,7 +102,7 @@ select {
 
 .color-three {
     background-color: #D0F4DE;
-    grid-area: three;
+    grid-area: thre;
 }
 
 .color-four {
@@ -113,3 +114,34 @@ select {
     background-color: #E4C1F9;
     grid-area: five;
 }
+
+/* media queries */
+/* @media (max-width: 600px) {
+    .color-grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "onee"
+            "twoo"
+            "thre"
+            "four"
+            "five"
+        ;
+        padding: 0;
+    }
+
+    .color-grid-item {
+        min-width: 0;
+        flex-direction: row;
+        justify-content: flex-start;
+        /* align-items: center; */
+width: 100%;
+}
+
+.color-hex-text {
+    padding: 0 1em;
+    width: 15%;
+}
+}
+
+*/
+/* hello world */
