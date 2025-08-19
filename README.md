@@ -10,7 +10,7 @@ A modern, responsive web app for generating color palettes based on a user-selec
 - Clean, modular code structure
 
 ## Demo
-![screenshot](screenshot.png)
+[Live Demo](https://grcolorgen.netlify.app/)
 
 ## How It Works
 1. Pick a color and a harmony mode.
@@ -32,6 +32,3 @@ A modern, responsive web app for generating color palettes based on a user-selec
 
 ## Credits
 - Color data powered by [The Color API](https://www.thecolorapi.com/)
-
-## License
-MIT
